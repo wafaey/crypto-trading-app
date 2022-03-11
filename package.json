@@ -29,6 +29,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@apollo/client": "^3.5.10"
+    "@apollo/client": "^3.5.10",
+    "@sveltejs/adapter-node": "^1.0.0-next.71",
+    "express": "^4.17.3"
   }
 }
