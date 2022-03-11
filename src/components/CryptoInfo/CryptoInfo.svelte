@@ -27,7 +27,7 @@
       </div> -->
     </div>
   </div>
-  <p class="currency">{currency.name}: {(((Number(stock.c)+Number(stock.o))/2)*Number(currency.rate)).toFixed(4)}</p>
+  <p class="currency">{currency.name}: {(((Number(stock.c)+Number(stock.o))/2)*currency.rate).toFixed(4)}</p>
 </div>
 
 <style>
