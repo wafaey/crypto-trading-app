@@ -1,4 +1,5 @@
 <script lang="ts">
+
  export let graphPoints;
 </script>
 <svg width="160" height="100">

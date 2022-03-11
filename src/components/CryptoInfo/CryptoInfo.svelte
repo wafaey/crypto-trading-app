@@ -4,15 +4,17 @@
  export let currency;
  export let symbol;
  let stock ={s:"",l:"",v:"",o:0,c:0};
+ let graphPoints=[];
  let ws
  onMount(() => {
     ws = new WebSocket(`wss://stream.binance.com:9443/ws/${symbol}@miniTicker`);
         ws.onmessage = (event) =>{
          stock = JSON.parse(event.data);
+         graphPoints.push(stock.c);
         }
    })
 </script>
-<div class={stock.s?"":"hide"}>
+<div class={stock.s?"space":"hide"}>
  <div class="card card-size bg-base-100 shadow-xl">
     <div class="card-body">
        <div class="head">
@@ -36,6 +38,7 @@
         height: 175px;
         border-radius: 0;
         color: #343495;
+        margin: 1%;
     }
     .head{
         display: flex;
@@ -69,5 +72,8 @@
     }
     .hide{
         display: none;
+    }
+    .space{
+        margin: 1%;
     }
 </style>

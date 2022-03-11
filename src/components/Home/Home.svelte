@@ -40,7 +40,7 @@
         };
 </script>
 
-    <div class="card shadow-l">
+    <div class="shadow-l">
       <div class="selection">
         <h2 class="select-text">Select your country</h2>
         <select class="select w-full max-w-xs"   on:change={handleChange}>
