@@ -58,9 +58,6 @@
 </div>
 
 <style>
-    .card{
-        width: 55%;
-    }
     .selection{
         display: flex;
         flex-direction: column;
